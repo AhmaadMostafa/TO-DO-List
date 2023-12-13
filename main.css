@@ -1,0 +1,117 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "montserrat" , "Fraunces" , serif;
+}
+
+body{
+    background-color: hsl(30, 38%, 92%);
+}
+.container{
+    width: 600px;
+    background-color: #fff;
+    margin: 100px auto;
+    text-align: center;
+    padding: 40px;
+    text-align: center;
+    border-radius: 10px;
+}
+h2{
+    color: #222;
+    text-align: center;
+    margin-bottom: 15px;
+}
+img{
+    height: 30px;
+    vertical-align: middle;
+}
+
+.container .TODO-app #input{
+    font-size: 16px;
+    width: 350px;
+    padding: 15px;
+    border-radius: 6px;
+    outline: none;
+    border: 1px #ddd solid;
+    margin-bottom: 20px;
+}
+.container .TODO-app button{
+    border-radius: 6px;
+    font-size: 16px;
+    padding: 10px;
+    cursor: pointer;
+    color: #fff;
+    font-weight: bold;
+    outline: none;
+    border: none;
+    transition-duration: 0.1s;
+    background-color: #ff4500;
+}
+.container .TODO-app button:hover{
+    background-color:   #f44336;
+}
+.container .TODO-app ul{
+    width: 100%;
+    margin: auto;
+    border-radius: 6px;
+    padding: 10px;
+}
+.container .TODO-app ul li{
+    font-size: 18px;
+    background-color: white;
+    padding: 10px;
+    border-radius: 6px;
+    list-style: none;
+    transition: 0.3s;
+    cursor: pointer;
+    border: 1px solid #ccc;
+}
+.container .TODO-app ul li:hover{
+    background-color: #f7f7f7;
+}
+.container .TODO-app ul li::after:hover{
+    width: 100px;
+}
+
+ul li::before{
+    content: '';
+    height: 25px;
+    width: 25px;
+    border-radius: 50%;
+    background-image: url(images/unchecked.png);
+    background-size: cover;
+    background-position: center;
+    color: black;
+    vertical-align: middle;
+    float: left;
+
+}
+
+ul li.checked::before{
+    background-image: url(images/checked.png);
+}
+.container .TODO-app ul li:not(:last-child){
+    margin-bottom: 15px;
+}
+ul li span{
+    background-color: #ff4500;
+    font-weight: bold;
+    font-size: 15px;
+    color: white;
+    border-radius: 6px;
+    padding: 4px 6px;
+    margin: -3px;
+    cursor: pointer;
+    float: right;
+}
+ul li span:hover{
+    background-color: #f44336;
+}
+
+.end{
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    
+}
